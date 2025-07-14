@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer"/>
+        <!-- En la etiqueta <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="font-poppins">
+    <div class="w-full  h-[100vh] flex flex-row justify-center items-center relative overflow-hidden">
+        <div class="w-full h-[100vh] bg-[#0d2569] flex flex-row justify-between items-center">
+            <div class="w-[50%] h-[100vh]">
+
+            </div>
+
+            <div class="w-[47%] h-full flex flex-col items-center bg-amber-50 rounded-l-4xl border-l-2 border-[#1251ff] drop-shadow-[#346aff] drop-shadow-2xl">
+                <h1 class="text-[45px] text-[#0f1122] font-[700] pt-[60px] tracking-[1px]">¡Bienvenido de nuevo!</h1>
+                <span class="text-[16px] text-center font-[500] text-[#515151] w-[70%] pt-[10px] leading-[20px]">Inicia sesión para acceder a tus cursos, continuar donde lo dejaste y seguir creciendo profesionalmente.</span>
+
+                <form action="/login"  method="post" class=" w-[65%] relative pb-5 pt-[50px] items-center flex flex-col gap-3 ">
+                    <div class="focus-efect w-[420px] h-[35px] p-5 text-[18px] rounded-[20px] border-[2px] border-[#838383] flex justify-center items-center">
+                        <i class="fa-solid fa-user"></i>
+                        <input name="name" placeholder="Usuario" autocomplete="new-username" required class="w-[510px] h-[35px] pt-5 pb-5 pl-3 border-none bg-amber-50 outline-none">
+                    </div>
+                    <div class="focus-efect w-[420px] h-[35px] p-5 text-[18px] rounded-[20px] border-[2px] border-[#838383] flex justify-center items-center">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" name="password" placeholder="Contraseña" autocomplete="new-username" required class="w-[510px] h-[35px] pt-5 pb-5 pl-3 border-none bg-amber-50 text-[18px] outline-none">
+                    </div>
+                    <a href="#" class="absolute bottom-[88px] right-0 text-[15px] font-[500] text-[#2f53b5] underline">Olvidaste tu Contraseña?</a>
+
+                    <div class="w-[93%] h-[45px] mt-[40px] flex justify-center rounded-3xl relative overflow-hidden">
+                        <div class=" bg-[#2f53b5] w-full h-[45px] absolute z-0"></div>
+                        <button type="submit" class="z-10 text-teal-50 font-[500]">Iniciar sesión</button>
+                    </div>
+                </form>
+
+                <div class="w-[60%] h-auto flex flex-row justify-center items-center overflow-hidden relative">
+                    <div class="w-[32%] h-[1px] bg-[#696969] absolute top-[15px] left-0 rounded-[100px]"></div>
+                    <span class="text-[16px] text-[#595959] font-[400]">o continuar con</span>
+                    <div class="w-[32%] h-[1px] bg-[#696969] absolute top-[15px] right-0 rounded-[100px]"></div>
+                </div>
+
+                <div class="w-full h-[80px] bg-amber-300 flex flex-row justify-center items-center gap-5">
+                    <div class="w-[30px] h-[30px] bg-amber-600">
+                        <i>h</i>
+                    </div>
+
+                    <div class="w-[30px] h-[30px] bg-amber-600">
+                        <i>h</i>
+                    </div>
+
+                    <div class="w-[30px] h-[30px] bg-amber-600">
+                        <i>h</i>
+                    </div>
+                </div>
+                <span>No te has registrado?<a href="#">Registrarse</a></span>
+            </div>
+        </div>
+    </div>
+    <div class=" w-full h-[400px] bg-amber-200"></div>
+
+    <style>
+        .focus-efect input:focus + i{
+            color: aqua;
+        }
+
+    </style>
+
+    {{!-- <h1 class="text-[#fff]">inicio de sesion</h1>
+    <form action="/login" method="POST">
+        <input name="name" placeholder="Usuario" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Entrar</button>
+    </form>
+    <a href="/signup">Registrarse</a> --}}
+</body>
+</html>

@@ -1,0 +1,23 @@
+ ➜  Local:   http://localhost:5173/
+cd mi-proyecto
+npm run dev
+
+cd backend
+node src/index.js
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+
+Registro de usuario con validación y contraseña encriptada.
+
+Login con validación, protección contra intentos repetidos (rate limiter) y creación de sesión.
+
+Sesiones seguras con cookies httpOnly.
+
+Rutas protegidas que solo permiten acceso si estás logueado (/home, /comunidad).
+
+Logout que destruye sesión y limpia cookies.
+
+API para que el frontend verifique si el usuario está autenticado.
+
+CORS configurado para comunicar frontend (Vite) y backend (Express).
